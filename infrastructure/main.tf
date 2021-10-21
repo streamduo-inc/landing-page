@@ -3,7 +3,7 @@ terraform {
     organization = "sfrensch"
 
     workspaces {
-      name = "front-end"
+      name = "landing-page"
     }
   }
 }
