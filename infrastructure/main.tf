@@ -14,10 +14,10 @@ provider "aws" {
 
 variable "domain_name" {
   type    = string
-  default = "admin.streamduo.io"
+  default = "streamduo.com"
 }
 
-resource "aws_s3_bucket" "website_bucket" {
+resource "aws_s3_bucket" "landing_bucket" {
   bucket = var.domain_name
   acl    = "public-read"
   policy = data.aws_iam_policy_document.website_policy.json
