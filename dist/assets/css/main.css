@@ -766,6 +766,10 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
+.login-button {
+  margin-left:20px
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item a::before {
     top: auto;
