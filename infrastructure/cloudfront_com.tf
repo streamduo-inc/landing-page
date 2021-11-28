@@ -42,7 +42,7 @@ resource "aws_cloudfront_distribution" "s3_distribution_landing_com" {
 
   viewer_certificate {
     acm_certificate_arn = "arn:aws:acm:us-east-1:351621728824:certificate/a10e2bb3-a73b-4a3b-985d-8cc04d094d0d"
-    ssl_support_method = "sni-only"
+    ssl_support_method  = "sni-only"
   }
 }
 
@@ -53,8 +53,8 @@ resource "aws_route53_record" "open_com" {
   name    = "streamduo.com"
   type    = "A"
   alias {
-    name = "${aws_cloudfront_distribution.s3_distribution_landing_com.domain_name}"
-    zone_id = "${aws_cloudfront_distribution.s3_distribution_landing_com.hosted_zone_id}"
+    name                   = aws_cloudfront_distribution.s3_distribution_landing_com.domain_name
+    zone_id                = aws_cloudfront_distribution.s3_distribution_landing_com.hosted_zone_id
     evaluate_target_health = false
   }
 }
@@ -64,8 +64,8 @@ resource "aws_route53_record" "www_com" {
   name    = "www.streamduo.com"
   type    = "A"
   alias {
-    name = "${aws_cloudfront_distribution.s3_distribution_landing_com.domain_name}"
-    zone_id = "${aws_cloudfront_distribution.s3_distribution_landing_com.hosted_zone_id}"
+    name                   = aws_cloudfront_distribution.s3_distribution_landing_com.domain_name
+    zone_id                = aws_cloudfront_distribution.s3_distribution_landing_com.hosted_zone_id
     evaluate_target_health = false
   }
 }
