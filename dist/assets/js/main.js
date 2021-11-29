@@ -15,9 +15,7 @@ window.onload = async () => {
 }
 
 const login = async () => {
-  await auth0.loginWithRedirect({
-    redirect_uri: "https://admin.streamduo.com"
-  });
+  window.location='https://admin.streamduo.com/#/auth';
 };
 
 (function () {
