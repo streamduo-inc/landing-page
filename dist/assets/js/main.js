@@ -1,11 +1,3 @@
-let auth0 = null;
-const configureClient = async () => {
-  auth0 = await createAuth0Client({
-    domain: "dev-v475zrua.us.auth0.com",
-    client_id: "4hxVMulk8AF9PoifOr6LLUv4f8E7VSD2"
-  });
-};
-
 document.addEventListener('DOMContentLoaded', (event) => {
     configureClient();
 });
