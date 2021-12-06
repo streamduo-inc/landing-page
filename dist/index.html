@@ -90,10 +90,10 @@
                       <a class="page-scroll active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#features">Features</a>
+                      <a class="page-scroll" href="#contact">Request a Demo</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#contact">Request Access</a>
+                      <a class="page-scroll" href="#about">How it Works</a>
                     </li>
                     <li class="nav-item">
                       <a href="https://blog.streamduo.com">Blog</a>
@@ -132,7 +132,7 @@
                 Real-time data integration platform
               </h1>
               <p class="wow fadeInUp" data-wow-delay=".6s">
-                StreamDuo is a platform for B2B data sharing. Make any data available to your partners in real-time, without any API hosting.
+                StreamDuo is a platform for B2B data integration. Stream data with your partners in real-time, using simple APIs.
               </p>
               <!-- <a
                 href="javascript:void(0)"
@@ -153,7 +153,7 @@
         </div>
       </div>
     </section>
-    <!-- ======== hero-section end ======== -->
+    <!-- ======== hero-section end ======== -->4
 
     <!-- ======== feature-section start ======== -->
     <section id="features" class="feature-section pt-120">
@@ -162,12 +162,12 @@
           <div class="col-lg-4 col-md-8 col-sm-10">
             <div class="single-feature">
               <div class="icon">
-                <i class="lni lni-alarm-clock"></i>
+                <i class="lni lni-bolt-alt"></i>
               </div>
               <div class="content">
-                <h3>Real Time</h3>
+                <h3>Streaming</h3>
                 <p>
-                  StreamDuo processes your data in real-time, letting you stream data with your partners instantaneously.
+                  Exchange data with partners in real-time, getting insight into their operations.
                 </p>
               </div>
             </div>
@@ -178,9 +178,9 @@
                 <i class="lni lni-layout"></i>
               </div>
               <div class="content">
-                <h3>No Code</h3>
+                <h3>Simple</h3>
                 <p>
-                  Establish a data stream with no code, and no API hosting. We host endpoints and manage authentication, allowing you to use client side tools, or connectors from your favorite IPaSS vendors.
+                  Don't host a new API. We do the hard work of hosting, allowing you to use simple API clients and start exchanging data in minutes.
                 </p>
               </div>
             </div>
@@ -193,7 +193,7 @@
               <div class="content">
                 <h3>Secure</h3>
                 <p>
-                  Granular management of authentication and access in the StreamDuo console ensures you control who can access your data.
+                  Granular management of authentication in the StreamDuo console gives you complete control data access.
                 </p>
               </div>
             </div>
@@ -203,13 +203,47 @@
     </section>
     <!-- ======== feature-section end ======== -->
 
+    <!-- ======== subscribe-section start ======== -->
+    <section id="contact" class="subscribe-section pt-120">
+      <div class="container">
+        <div class="subscribe-wrapper img-bg">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-7">
+              <div class="section-title mb-15">
+                <h2 class="text-white mb-25">Request a Demo</h2>
+                <p class="text-white pr-5">
+                  Get a 1:1 introduction to what StreamDuo can do for you.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-5">
+              <form action="https://formspree.io/f/xyylvldj"
+                    method="POST"
+                    class="subscribe-form">
+                <input
+                        type="email"
+                        name="subs-email"
+                        id="subs-email"
+                        placeholder="Your Email"
+                />
+                <button type="submit" class="main-btn btn-hover">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== subscribe-section end ======== -->
+
     <!-- ======== about-section start ======== -->
     <section id="about" class="about-section pt-150">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 col-lg-6">
             <div class="about-img">
-              <img src="assets/img/about/screenshot_1.png" alt="" class="w-100" />
+              <img src="assets/img/about/about-flows.png" alt="" class="w-100" />
               <img
                 src="assets/img/about/about-left-shape.svg"
                 alt=""
@@ -226,26 +260,29 @@
             <div class="about-content">
               <div class="section-title mb-30">
                 <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Manage data integrations across partners in one place
+                  How it Works
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Manage all your external data integrations in one place. See real-time analytics on your streams, sample records, and monitor which records have been read.
-                  From the StreamDuo console you can:
+                  With StreamDuo you write records to a private stream using simple APIs. Once you grant access to your partners, they can read those records using those same APIs.
                 </p>
+                  <br>
+                <p class="wow fadeInUp" data-wow-delay=".4s">
+                  A stream can be used as..
+                </p>
+
               </div>
-              <ul>
-                <li>Grant and revoke access</li>
-                <li>Monitor read status of records</li>
-                <li>Inspect records</li>
-              </ul>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                For a more detailed understanding of how it works, explore some of our documentation.
-              </p><br>
+                <h4>A Data Stream</h4>
+                <p class="wow fadeInUp" data-wow-delay=".4s">The stream is ordered in time, and maintains a record of read status, allowing it to act as a streaming data source.</p>
+                <br>
+                <br>
+                <h4>A Database</h4>
+                <p class="wow fadeInUp" data-wow-delay=".4s">The stream tracks records by ID, allowing you to use it like a traditional database to read and write individual records.</p>
+              <br>
               <a
                 href="https://docs.streamduo.com/how/"
                 class="main-btn btn-hover border-btn wow fadeInUp"
                 data-wow-delay=".6s"
-                >See How it Works</a
+                >Learn More About How it Works</a
               >
             </div>
           </div>
@@ -262,20 +299,14 @@
             <div class="about-content">
               <div class="section-title mb-30">
                 <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Flexible options for reading and writing
+                  Make Partnerships Happen
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  The StreamDuo APIs offer many options for reading and writing:
+                  Don't let a partnership stall because the API build is in the backlog. With StreamDuo, you can establish data streaming in minutes, taking the friction out of partnerships integration.
                 </p>
               </div>
-              <ul>
-                <li>REST API</li>
-                <li>No code IPaaS connectors</li>
-                <li>Bulk file upload/download</li>
-                <li>Python SDK</li>
-              </ul>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                See our use cases for a deeper dive on how StreamDuo is used.
+                See our use cases for a deeper dive on how StreamDuo can solve data integration for B2B partnerships.
               </p><br>
              <a
                 href="https://blog.streamduo.com/tag/use-cases/"
@@ -287,7 +318,7 @@
           </div>
           <div class="col-xl-6 col-lg-6 order-first order-lg-last">
             <div class="about-img-2">
-              <img src="assets/img/about/about-2b.png" alt="" class="w-100" />
+              <img src="assets/img/about/about-logo.png" alt="" class="w-100" />
               <img
                 src="assets/img/about/about-right-shape.svg"
                 alt=""
@@ -309,39 +340,6 @@
     </section>
     <!-- ======== feature-section end ======== -->
 
-    <!-- ======== subscribe-section start ======== -->
-    <section id="contact" class="subscribe-section pt-120">
-      <div class="container">
-        <div class="subscribe-wrapper img-bg">
-          <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-7">
-              <div class="section-title mb-15">
-                <h2 class="text-white mb-25">Request Access</h2>
-                <p class="text-white pr-5">
-                  Request an invitation to try StreamDuo for free
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-5">
-              <form action="https://formspree.io/f/xyylvldj"
-                  method="POST"
-                  class="subscribe-form">
-                <input
-                  type="email"
-                  name="subs-email"
-                  id="subs-email"
-                  placeholder="Your Email"
-                />
-                <button type="submit" class="main-btn btn-hover">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ======== subscribe-section end ======== -->
 
     <!-- ======== footer start ======== -->
     <footer class="footer">
