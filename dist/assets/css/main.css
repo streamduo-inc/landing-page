@@ -274,6 +274,14 @@ p {
   color: #5864FF;
 }
 
+.main-btn.border-btn-light {
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+}
+
 .btn-hover {
   position: relative;
   overflow: hidden;
