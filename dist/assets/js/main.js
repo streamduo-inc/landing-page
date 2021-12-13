@@ -10,6 +10,10 @@ const login = async () => {
   window.location='https://admin.streamduo.com/#/auth';
 };
 
+const signup = async () => {
+  window.location='https://admin.streamduo.com/#/signup';
+};
+
 (function () {
   //===== Prealoder
 
