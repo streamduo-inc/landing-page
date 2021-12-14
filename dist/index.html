@@ -27,8 +27,26 @@
       gtag('js', new Date());
 
       gtag('config', 'G-JLJT6JHDPC');
+      gtag('config', 'AW-10814868103');
     </script>
     <script src="https://fd2e4b9db2d64ef19b70dcb2d1de70b5.js.ubembed.com" async></script>
+    <!-- Event snippet for Sign-up conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-10814868103/pz30CMrU8okDEIeV96Qo',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -88,16 +106,10 @@
                 >
                   <ul id="nav" class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="page-scroll" href="#contact">Request a Demo</a>
+                      <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#about">How it Works</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="https://blog.streamduo.com" target="_blank">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="https://docs.streamduo.com/how/" target="_blank">Documentation</a>
                     </li>
                     <li class="nav-item">
                       <a href="#" onclick="login();">Login</a>
@@ -130,18 +142,18 @@
         <div class="row align-items-center position-relative">
           <div class="col-lg-6">
             <div class="hero-content">
-              <h1 class="wow fadeInUp" data-wow-delay=".4s">
+              <h1 class="wow fadeInUp" data-wow-delay=".4s" id="titleText">
                 Real-time data integration platform
               </h1>
-              <p class="wow fadeInUp" data-wow-delay=".6s">
+              <p class="wow fadeInUp" data-wow-delay=".6s" id="taglineText">
                 StreamDuo is a platform for B2B data integration. Connect back-end systems and stream data with your partners in real-time, using simple APIs
               </p>
-              <!-- <a
-                href="javascript:void(0)"
+              <a
+                a href="#" onclick="signup();"
                 class="main-btn border-btn btn-hover wow fadeInUp"
                 data-wow-delay=".6s"
-                >Get Started</a
-              > -->
+                >Sign-Up for Free</a
+              >
               <a href="#features" class="scroll-bottom">
                 <i class="lni lni-arrow-down"></i
               ></a>
@@ -169,7 +181,7 @@
               <div class="content">
                 <h3>Streaming</h3>
                 <p>
-                  Exchange data with partners in real-time, for seamless operations.
+                  Exchange data with partners in real-time, for seamless integration.
                 </p>
               </div>
             </div>
@@ -182,7 +194,7 @@
               <div class="content">
                 <h3>Simple</h3>
                 <p>
-                  Don't host a new API. We do the hard work of hosting, allowing you to use simple API clients and start exchanging data in minutes.
+                  We do the work of API hosting, allowing you to use simple API clients to start exchanging data in minutes.
                 </p>
               </div>
             </div>
@@ -212,7 +224,7 @@
           <div class="row align-items-center">
             <div class="col-xl-6 col-lg-7">
               <div class="section-title mb-15">
-                <h2 class="text-white mb-25">Request a Demo</h2>
+                <h2 class="text-white mb-25">Meet With Us</h2>
                 <p class="text-white pr-5">
                   Get a 1:1 introduction to what StreamDuo can do for you.
                 </p>
@@ -220,7 +232,7 @@
             </div>
             <div class="col-xl-6" id="ub-convertable-trigger">
                 <button type="submit" class="main-btn btn-hover border-btn-light btn-block ">
-                  Request a Demo
+                  Request a Meeting
                 </button>
             </div>
           </div>
@@ -274,8 +286,7 @@
                 href="https://docs.streamduo.com/how/"
                 class="main-btn btn-hover border-btn wow fadeInUp"
                 data-wow-delay=".6s"
-                >Learn More About How it Works</a
-              >
+                >Learn More</a>
             </div>
           </div>
         </div>
@@ -284,53 +295,77 @@
     <!-- ======== about-section end ======== -->
 
     <!-- ======== about2-section start ======== -->
-    <section id="about2" class="about-section pt-150">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-6">
-            <div class="about-content">
-              <div class="section-title mb-30">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Make Partnerships Happen
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Don't let a partnership stall because the API build is in the backlog. With StreamDuo, you can establish data streaming in minutes, taking the friction out of partnerships integration.
-                </p>
-              </div>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                See our use cases for a deeper dive on how StreamDuo can solve data integration for B2B partnerships.
-              </p><br>
-             <a
-                href="https://blog.streamduo.com/tag/use-cases/"
-                class="main-btn btn-hover border-btn wow fadeInUp"
-                data-wow-delay=".6s"
-                >See Use Cases</a
-              >
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 order-first order-lg-last">
-            <div class="about-img-2">
-              <img src="assets/img/about/about-logo.png" alt="" class="w-100" />
-              <img
-                src="assets/img/about/about-right-shape.svg"
-                alt=""
-                class="shape shape-1"
-              />
-              <img
-                src="assets/img/about/right-dots.svg"
-                alt=""
-                class="shape shape-2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!--    <section id="about2" class="about-section pt-150">-->
+<!--      <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--          <div class="col-xl-6 col-lg-6">-->
+<!--            <div class="about-content">-->
+<!--              <div class="section-title mb-30">-->
+<!--                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">-->
+<!--                  Make Partnerships Happen-->
+<!--                </h2>-->
+<!--                <p class="wow fadeInUp" data-wow-delay=".4s">-->
+<!--                  Don't let a partnership stall because the API build is in the backlog. With StreamDuo, you can establish data streaming in minutes, taking the friction out of partnerships integration.-->
+<!--                </p>-->
+<!--              </div>-->
+<!--              <p class="wow fadeInUp" data-wow-delay=".4s">-->
+<!--                See our use cases for a deeper dive on how StreamDuo can solve data integration for B2B partnerships.-->
+<!--              </p><br>-->
+<!--             <a-->
+<!--                href="https://blog.streamduo.com/tag/use-cases/"-->
+<!--                class="main-btn btn-hover border-btn wow fadeInUp"-->
+<!--                data-wow-delay=".6s"-->
+<!--                >See Use Cases</a-->
+<!--              >-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-xl-6 col-lg-6 order-first order-lg-last">-->
+<!--            <div class="about-img-2">-->
+<!--              <img src="assets/img/about/about2.png" alt="" class="w-100" />-->
+<!--              <img-->
+<!--                src="assets/img/about/about-right-shape.svg"-->
+<!--                alt=""-->
+<!--                class="shape shape-1"-->
+<!--              />-->
+<!--              <img-->
+<!--                src="assets/img/about/right-dots.svg"-->
+<!--                alt=""-->
+<!--                class="shape shape-2"-->
+<!--              />-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
     <!-- ======== about2-section end ======== -->
         </div>
       </div>
     </section>
     <!-- ======== feature-section end ======== -->
+
+    <!-- ======== subscribe-section start ======== -->
+    <section id="cases" class="subscribe-section pt-120">
+      <div class="container">
+        <div class="subscribe-wrapper img-bg">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-7">
+              <div class="section-title mb-15">
+                <h2 class="text-white mb-25">StreamDuo in Action</h2>
+                <p class="text-white pr-5">
+                  See our use cases for a deep dive on how StreamDuo can solve data integration.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <button type="submit" class="main-btn btn-hover border-btn-light btn-block" onclick=window.open("https://blog.streamduo.com/tag/use-cases/","_blank")>
+                See Use Cases
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== subscribe-section end ======== -->
 
 
     <!-- ======== footer start ======== -->
