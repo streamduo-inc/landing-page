@@ -1,18 +1,48 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    configureClient();
-});
-
-window.onload = async () => {
-  await configureClient();
-}
-
 const login = async () => {
   window.location='https://admin.streamduo.com/#/auth';
 };
 
 const signup = async () => {
+  gtag_report_conversion();
   window.location='https://admin.streamduo.com/#/signup';
 };
+
+const validCampaigns = ["api", "ftp", "streaming", "backend", "partner"]
+const titleValues = {
+  'api' : "Host Any Data on an API in Minutes.",
+  'ftp' : "Ditch the FTP for Real-Time Data Integration.",
+  'streaming': 'Stream Data Between Organizations in Minutes.',
+  'backend': 'Backend Data Integration in Minutes.',
+  'partner': 'Establish Partnerships with Real-time Data Integration.',
+  'other': 'Real-time Data Integration Platform.'
+}
+
+const taglineValues = {
+  'api' : "StreamDuo is a platform for B2B data integration. Setup a fully managed API in minutes.",
+  'ftp' : "StreamDuo is a platform for real-time data exchange. Share data with your partners in real-time, using simple APIs.",
+  'streaming': 'StreamDuo is a platform for private data streaming. Stream data with your partners in real-time, using simple APIs.',
+  'backend': 'StreamDuo is a platform for backend data integration. Connect with your partners in real-time, using simple APIs.',
+  'partner': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.',
+  'other': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.'
+}
+
+
+function getTitle()  {
+  return (titleValues[getAd()])
+}
+
+function getTagline()  {
+  return (taglineValues[getAd()])
+}
+
+function getAd() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('src');
+  if (validCampaigns.includes(myParam)){
+    return myParam;
+  }
+  return "other"
+}
 
 (function () {
   //===== Prealoder
@@ -111,4 +141,7 @@ const signup = async () => {
   // WOW active
   new WOW().init();
 
+  //Set variable content
+  document.getElementById("titleText").innerHTML = getTitle();
+  document.getElementById("taglineText").innerHTML = getTagline();
 })();

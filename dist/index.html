@@ -27,8 +27,26 @@
       gtag('js', new Date());
 
       gtag('config', 'G-JLJT6JHDPC');
+      gtag('config', 'AW-10814868103');
     </script>
     <script src="https://fd2e4b9db2d64ef19b70dcb2d1de70b5.js.ubembed.com" async></script>
+    <!-- Event snippet for Sign-up conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-10814868103/pz30CMrU8okDEIeV96Qo',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -130,18 +148,18 @@
         <div class="row align-items-center position-relative">
           <div class="col-lg-6">
             <div class="hero-content">
-              <h1 class="wow fadeInUp" data-wow-delay=".4s">
+              <h1 class="wow fadeInUp" data-wow-delay=".4s" id="titleText">
                 Real-time data integration platform
               </h1>
-              <p class="wow fadeInUp" data-wow-delay=".6s">
+              <p class="wow fadeInUp" data-wow-delay=".6s" id="taglineText">
                 StreamDuo is a platform for B2B data integration. Connect back-end systems and stream data with your partners in real-time, using simple APIs
               </p>
-              <!-- <a
-                href="javascript:void(0)"
+              <a
+                a href="#" onclick="signup();"
                 class="main-btn border-btn btn-hover wow fadeInUp"
                 data-wow-delay=".6s"
-                >Get Started</a
-              > -->
+                >Sign-Up for Free</a
+              >
               <a href="#features" class="scroll-bottom">
                 <i class="lni lni-arrow-down"></i
               ></a>
