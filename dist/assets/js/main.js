@@ -8,30 +8,26 @@ const signup = async () => {
 };
 
 function contactSubmit(){
-  let name = document.getElementById('subs-name').value;
-  let email = document.getElementById('subs-email').value;
   const payload = {
     "dataPayload": {"source": "homepage",
-    "name": name,
-    "email":email}
+    "name": document.getElementById('subs-name').value,
+    "email":document.getElementById('subs-email').value}
   }
 
   let xhr = new XMLHttpRequest();
   xhr.open("POST", 'https://api.streamduo.com/public/stream/dbc91d49-2998-4d32-8842-cf54c63824ab/record', true);
 
-//Send the proper header information along with the request
+  //Send the proper header information along with the request
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
   xhr.onreadystatechange = function() { // Call a function when the state changes.
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-
+      console.log("thanks")
+      document.getElementById('subs-name').value = '';
+      document.getElementById('subs-email').value = '';
     }
   }
   xhr.send(JSON.stringify(payload));
-  console.log("thanks")
-  document.getElementById('subs-name').value = '';
-  document.getElementById('subs-email').value = '';
-
 }
 
 const validCampaigns = ["api", "ftp", "streaming", "backend", "partner"]
