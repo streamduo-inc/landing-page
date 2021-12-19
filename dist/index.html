@@ -231,10 +231,25 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </div>
             </div>
             <div class="col-xl-6" id="ub-convertable-trigger">
-                <button type="submit" class="main-btn btn-hover border-btn-light btn-block ">
-                  Request a Meeting
-                </button>
+              <form class="subscribe-form" id="sub-form">
+                <input
+                        type="name"
+                        name="subs-name"
+                        id="subs-name"
+                        placeholder="Name"
+                />
+                <input
+                        type="email"
+                        name="subs-email"
+                        id="subs-email"
+                        placeholder="Email"
+                />
+              </form>
             </div>
+            <button class="main-btn btn-hover border-btn-light btn-block" onclick="contactSubmit()">
+              Request a Call
+            </button>
+
           </div>
         </div>
       </div>
