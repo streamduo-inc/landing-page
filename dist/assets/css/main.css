@@ -272,6 +272,7 @@ p {
   border: 2px solid #5864FF;
   background: transparent;
   color: #5864FF;
+  border-radius: 18px;
 }
 
 .main-btn.border-btn-light {
@@ -280,11 +281,13 @@ p {
   color: #FFFFFF;
   display: block;
   width: 100%;
+  border-radius: 18px;
 }
 
 .btn-hover {
   position: relative;
   overflow: hidden;
+  border-radius: 18px;
 }
 
 .btn-hover::after {
@@ -292,7 +295,7 @@ p {
   position: absolute;
   width: 0%;
   height: 0%;
-  border-radius: 50%;
+  border-radius: 18px;
   background: rgba(0, 0, 0, 0.05);
   top: 50%;
   left: 50%;
@@ -1446,6 +1449,7 @@ p {
 
 .subscribe-section .subscribe-wrapper .subscribe-form input {
   width: 100%;
+  margin-bottom: 15px;
   padding: 20px 30px;
   padding-right: 142px;
   border-radius: 18px;
