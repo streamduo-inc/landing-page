@@ -25,6 +25,8 @@ function contactSubmit(){
       console.log("thanks")
       document.getElementById('subs-name').value = '';
       document.getElementById('subs-email').value = '';
+      let myModal = new bootstrap.Modal(document.getElementById('thankyou-modal'))
+      myModal.show()
     }
   }
   xhr.send(JSON.stringify(payload));
