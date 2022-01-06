@@ -30,6 +30,7 @@ function contactSubmit(){
     }
   }
   xhr.send(JSON.stringify(payload));
+  gtag('event', 'conversion', {'send_to': 'AW-10814868103/kVh7CNqKnIkDEIeV96Qo'});
 }
 
 const validCampaigns = ["api", "ftp", "streaming", "backend", "partner"]
