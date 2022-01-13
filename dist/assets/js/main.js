@@ -4,7 +4,7 @@ const login = async () => {
 
 const signup = async () => {
   gtag_report_conversion();
-  window.location='https://admin.streamduo.com/#/signup';
+  window.location='https://admin.streamduo.com/#/auth';
 };
 
 function contactSubmit(){
