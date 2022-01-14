@@ -49,9 +49,8 @@ const taglineValues = {
   'streaming': 'StreamDuo is a platform for private data streaming. Stream data with your partners in real-time, using simple APIs.',
   'backend': 'StreamDuo is a platform for backend data integration. Connect with your partners in real-time, using simple APIs.',
   'partner': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.',
-  'other': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.'
+  'other': 'Don\'t host another API to connect with your partners. Securely stream data in real-time, using simple APIs.'
 }
-
 
 function getTitle()  {
   return (titleValues[getAd()])
