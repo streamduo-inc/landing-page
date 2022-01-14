@@ -36,22 +36,21 @@ function contactSubmit(){
 const validCampaigns = ["api", "ftp", "streaming", "backend", "partner"]
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
-  'ftp' : "Ditch the FTP for Real-Time Data Integration.",
-  'streaming': 'Stream Data Between Organizations in Minutes.',
+  'ftp' : "Ditch the Batch for Real-Time Data Integration.",
+  'streaming': 'Stream Data With your Partners in Minutes.',
   'backend': 'Backend Data Integration in Minutes.',
   'partner': 'Establish Partnerships with Real-time Data Integration.',
   'other': 'Real-time Data Integration Platform.'
 }
 
 const taglineValues = {
-  'api' : "StreamDuo is a platform for B2B data integration. Setup a fully managed API in minutes.",
-  'ftp' : "StreamDuo is a platform for real-time data exchange. Share data with your partners in real-time, using simple APIs.",
-  'streaming': 'StreamDuo is a platform for private data streaming. Stream data with your partners in real-time, using simple APIs.',
-  'backend': 'StreamDuo is a platform for backend data integration. Connect with your partners in real-time, using simple APIs.',
-  'partner': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.',
-  'other': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.'
+  'api' : ["Don\'t host another API to connect with your partners.", "Host your data on a fully managed API in minutes."],
+  'ftp' : ["Connect with your partners in real-time.", "Share data in real-time, using simple APIs."],
+  'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
+  'backend': ['StreamDuo is a platform for backend data integration.', 'Connect with your partners in real-time, using simple APIs.'],
+  'partner': ['StreamDuo is a platform for real-time data integration.', 'Stream data with your partners using simple APIs.'],
+  'other': ['Don\'t host another API to connect with your partners.', 'Stream data in real-time, using simple APIs.']
 }
-
 
 function getTitle()  {
   return (titleValues[getAd()])
@@ -169,5 +168,6 @@ function getAd() {
 
   //Set variable content
   document.getElementById("titleText").innerHTML = getTitle();
-  document.getElementById("taglineText").innerHTML = getTagline();
+  document.getElementById("taglineText").innerHTML = getTagline()[0];
+  document.getElementById("taglineText2").innerHTML = getTagline()[1];
 })();
