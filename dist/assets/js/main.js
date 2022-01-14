@@ -44,12 +44,12 @@ const titleValues = {
 }
 
 const taglineValues = {
-  'api' : "StreamDuo is a platform for B2B data integration. Setup a fully managed API in minutes.",
-  'ftp' : "StreamDuo is a platform for real-time data exchange. Share data with your partners in real-time, using simple APIs.",
-  'streaming': 'StreamDuo is a platform for private data streaming. Stream data with your partners in real-time, using simple APIs.',
-  'backend': 'StreamDuo is a platform for backend data integration. Connect with your partners in real-time, using simple APIs.',
-  'partner': 'StreamDuo is a platform for real-time data integration. Stream data with your partners using simple APIs.',
-  'other': 'Don\'t host another API to connect with your partners. Securely stream data in real-time, using simple APIs.'
+  'api' : ["StreamDuo is a platform for B2B data integration.", "Host your data on a fully managed API in minutes."],
+  'ftp' : ["StreamDuo is a platform for real-time data exchange.", "Share data with your partners in real-time, using simple APIs."],
+  'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
+  'backend': ['StreamDuo is a platform for backend data integration.', 'Connect with your partners in real-time, using simple APIs.'],
+  'partner': ['StreamDuo is a platform for real-time data integration.', 'Stream data with your partners using simple APIs.'],
+  'other': ['Don\'t host another API to connect with your partners.', 'Stream data in real-time, using simple APIs.']
 }
 
 function getTitle()  {
@@ -168,5 +168,6 @@ function getAd() {
 
   //Set variable content
   document.getElementById("titleText").innerHTML = getTitle();
-  document.getElementById("taglineText").innerHTML = getTagline();
+  document.getElementById("taglineText").innerHTML = getTagline()[0];
+  document.getElementById("taglineText2").innerHTML = getTagline()[1];
 })();
