@@ -33,23 +33,20 @@ function contactSubmit(){
   gtag('event', 'conversion', {'send_to': 'AW-10814868103/kVh7CNqKnIkDEIeV96Qo'});
 }
 
-const validCampaigns = ["api", "ftp", "streaming", "backend", "partner"]
+const validCampaigns = ["api", "streaming"]
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
-  'ftp' : "Ditch the Batch for Real-Time Data Integration.",
   'streaming': 'Stream Data With your Partners in Minutes.',
-  'backend': 'Backend Data Integration in Minutes.',
-  'partner': 'Establish Partnerships with Real-time Data Integration.',
-  'other': 'Real-time Data Integration Platform.'
 }
 
 const taglineValues = {
-  'api' : ["Don\'t host another API to connect with your partners.", "Host your data on a fully managed API in minutes."],
-  'ftp' : ["Connect with your partners in real-time.", "Share data in real-time, using simple APIs."],
+  'api' : ["Don\'t host another API to connect with your partners.", "Host data on a fully managed API in minutes."],
   'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
-  'backend': ['StreamDuo is a platform for backend data integration.', 'Connect with your partners in real-time, using simple APIs.'],
-  'partner': ['StreamDuo is a platform for real-time data integration.', 'Stream data with your partners using simple APIs.'],
-  'other': ['Don\'t host another API to connect with your partners.', 'Stream data in real-time, using simple APIs.']
+}
+
+const howItWorks = {
+  'api' : ["Create a Stream", "A Stream is a private channel for to read and write records."],
+  'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
 }
 
 function getTitle()  {
@@ -66,7 +63,7 @@ function getAd() {
   if (validCampaigns.includes(myParam)){
     return myParam;
   }
-  return "other"
+  return "api"
 }
 
 (function () {
