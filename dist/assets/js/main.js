@@ -40,13 +40,8 @@ const titleValues = {
 }
 
 const taglineValues = {
-  'api' : ["Don\'t host another API to connect with your partners.", "Host data on a fully managed API in minutes."],
+  'api' : ['Host data on a fully managed API in minutes.'],
   'streaming': ['Share data in real-time, with no API hosting.'],
-}
-
-const howItWorks = {
-  'api' : ["Create a Stream", "A Stream is a private channel for to read and write records."],
-  'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
 }
 
 function getTitle()  {
