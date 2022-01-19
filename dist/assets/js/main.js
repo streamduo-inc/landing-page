@@ -41,7 +41,7 @@ const titleValues = {
 
 const taglineValues = {
   'api' : ["Don\'t host another API to connect with your partners.", "Host data on a fully managed API in minutes."],
-  'streaming': ['StreamDuo is a platform for private data streaming.', 'Stream data with your partners in real-time, using simple APIs.'],
+  'streaming': ['Share data in real-time, with no API hosting.'],
 }
 
 const howItWorks = {
@@ -63,7 +63,7 @@ function getAd() {
   if (validCampaigns.includes(myParam)){
     return myParam;
   }
-  return "api"
+  return "streaming"
 }
 
 (function () {
@@ -166,5 +166,4 @@ function getAd() {
   //Set variable content
   document.getElementById("titleText").innerHTML = getTitle();
   document.getElementById("taglineText").innerHTML = getTagline()[0];
-  document.getElementById("taglineText2").innerHTML = getTagline()[1];
 })();

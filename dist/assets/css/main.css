@@ -981,6 +981,19 @@ p {
   line-height: 1;
 }
 
+.icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(88, 100, 255, 0.1);
+  color: #5864FF;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .feature-section .single-feature .content h3 {
   margin-bottom: 20px;
 }
@@ -1350,6 +1363,7 @@ p {
 
 .pricing-section .single-pricing .pricing-header {
   padding-bottom: 35px;
+  margin-top: 345px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 45px;
   text-align: center;
@@ -2502,8 +2516,12 @@ p {
 #pricing-header {
   padding: 40px;
   text-align: center;
+  margin-top: 20px;
 }
-
+#usecase-header {
+  padding: 40px;
+  text-align: center;
+}
 /*html {*/
 /*  box-sizing: border-box;*/
 /*  font-family: 'Open Sans', sans-serif;*/
@@ -2593,18 +2611,20 @@ p {
 }
 
 .pricing-img {
-  margin-bottom: 25px;
-  max-width: 100%;
+  align-content: center;
+  align-items: center;
+  max-width: 65%;
 }
 
 .pricing-header {
   color: #888;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
 
 .pricing-features {
-  color: #016FF9;
+  color: #5864ff;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 50px 0 25px;
@@ -2622,21 +2642,22 @@ p {
 }
 
 .pricing-price {
-  color: #016FF9;
+  color: #5864ff;
   display: block;
   font-size: 32px;
   font-weight: 700;
 }
 
 .pricing-button {
-  border: 1px solid #9dd1ff;
+  border: 1px solid #5864ff;
   border-radius: 10px;
-  color: #348EFE;
+  color: #5864ff;
   display: inline-block;
   margin: 25px 0;
   padding: 15px 35px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
+  background-color: white;
 }
 
 .pricing-button:hover,
