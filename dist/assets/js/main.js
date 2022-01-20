@@ -96,17 +96,6 @@ function getAd() {
       header_navbar.classList.remove("sticky");
       logo.src = "assets/img/logo/sketch-white.svg";
     }
-
-    // show or hide the back-top-top button
-    const backToTo = document.querySelector(".scroll-top");
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      backToTo.style.display = "flex";
-    } else {
-      backToTo.style.display = "none";
-    }
   };
 
   // for menu scroll
@@ -169,4 +158,8 @@ function getAd() {
   //Set variable content
   document.getElementById("titleText").innerHTML = getTitle();
   document.getElementById("taglineText").innerHTML = getTagline()[0];
+  if (getAd() == 'api') {
+    document.getElementById("howitworks-img").src  = "assets/img/about/how-it-works-api.png"
+    document.getElementById("read-string").innerHTML = "Read records using simple APIs. Read the latest data for any record as if you had a hosted API."
+  }
 })();
