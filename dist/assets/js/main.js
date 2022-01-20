@@ -12,7 +12,7 @@ function contactSubmit(){
   const validEmailExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const email = document.getElementById('subs-email').value;
   const name = document.getElementById('subs-name').value;
-  if (validEmailExp.test(email) & validClientExp.test(name)) {
+  if (validEmailExp.test(email) && validClientExp.test(name)) {
   const payload = {
     "dataPayload": {"source": "homepage",
     "name": name,
