@@ -8,10 +8,15 @@ const signup = async () => {
 };
 
 function contactSubmit(){
+  const validClientExp = /[\w\s+=,.@-]+$/;
+  const validEmailExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const email = document.getElementById('subs-email').value;
+  const name = document.getElementById('subs-name').value;
+  if (validEmailExp.test(email) & validClientExp.test(name)) {
   const payload = {
     "dataPayload": {"source": "homepage",
-    "name": document.getElementById('subs-name').value,
-    "email":document.getElementById('subs-email').value}
+    "name": name,
+    "email":email}
   }
 
   let xhr = new XMLHttpRequest();
@@ -22,7 +27,6 @@ function contactSubmit(){
 
   xhr.onreadystatechange = function() { // Call a function when the state changes.
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-      console.log("thanks")
       document.getElementById('subs-name').value = '';
       document.getElementById('subs-email').value = '';
       let myModal = new bootstrap.Modal(document.getElementById('thankyou-modal'))
@@ -31,6 +35,10 @@ function contactSubmit(){
   }
   xhr.send(JSON.stringify(payload));
   gtag('event', 'conversion', {'send_to': 'AW-10814868103/kVh7CNqKnIkDEIeV96Qo'});
+  } else {
+    let myModal = new bootstrap.Modal(document.getElementById('validation-modal'))
+    myModal.show()
+  }
 }
 
 const validCampaigns = ["api", "streaming"]

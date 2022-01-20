@@ -41,6 +41,11 @@
           'send_to': 'AW-10814868103/pz30CMrU8okDEIeV96Qo',
           'event_callback': callback
         });
+        console.log("convert");
+        gtag('event', 'conversion', {
+          'send_to': 'G-JLJT6JHDPC',
+          'event_callback': callback
+        });
         return false;
       }
     </script>
@@ -57,6 +62,23 @@
         </div>
         <div class="modal-body">
           <p>Thanks for reaching out, we will be in touch soon!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="validation-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Submission Error</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Please enter a valid email address and name.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -364,12 +386,14 @@
                       name="subs-name"
                       id="subs-name"
                       placeholder="Name"
+                      required="True"
               />
               <input
                       type="email"
                       name="subs-email"
                       id="subs-email"
                       placeholder="Email"
+                      required="True"
               />
             </form>
           </div>
