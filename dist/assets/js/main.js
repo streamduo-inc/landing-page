@@ -41,15 +41,17 @@ function contactSubmit(){
   }
 }
 
-const validCampaigns = ["api", "streaming"]
+const validCampaigns = ["api", "streaming", "events"]
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
   'streaming': 'Stream Data With your Partners in Minutes.',
+  'events': 'Connect Event Driven Architectures in Minutes.'
 }
 
 const taglineValues = {
   'api' : ['Host data on a fully managed API in minutes.'],
   'streaming': ['Share data in real-time, with no API hosting.'],
+  'events': ['Stream data with your partners, with no API hosting.']
 }
 
 function getTitle()  {
@@ -158,8 +160,10 @@ function getAd() {
   //Set variable content
   document.getElementById("titleText").innerHTML = getTitle();
   document.getElementById("taglineText").innerHTML = getTagline()[0];
+
   if (getAd() == 'api') {
     document.getElementById("howitworks-img").src  = "assets/img/about/how-it-works-api.png"
     document.getElementById("read-string").innerHTML = "Read records using simple APIs. Read the latest data for any record as if you had a hosted API."
   }
+
 })();
