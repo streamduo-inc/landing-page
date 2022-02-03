@@ -2518,6 +2518,20 @@ p {
   text-align: center;
   margin-top: 20px;
 }
+
+.pricing-section .single-pricing .pricing-header2 {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.pricing-section .single-pricing .pricing-header2 .price {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #5864FF;
+}
+
 #usecase-header {
   padding: 40px;
   text-align: center;

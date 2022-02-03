@@ -50,8 +50,8 @@ const titleValues = {
 
 const taglineValues = {
   'api' : ['Host data on a fully managed API in minutes.'],
-  'streaming': ['Share data in real-time, with no API hosting.'],
-  'events': ['Stream data with your partners, with no API hosting.']
+  'streaming': ['Stream data in real-time, with no infrastructure hosting.'],
+  'events': ['Stream data with your partners, with no Stream hosting.']
 }
 
 function getTitle()  {
