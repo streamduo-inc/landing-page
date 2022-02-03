@@ -1363,7 +1363,6 @@ p {
 
 .pricing-section .single-pricing .pricing-header {
   padding-bottom: 35px;
-  margin-top: 345px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 45px;
   text-align: center;
@@ -2512,13 +2511,6 @@ p {
   padding-bottom: 225px;
 }
 
-
-#pricing-header {
-  padding: 40px;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .pricing-section .single-pricing .pricing-header2 {
   padding-bottom: 35px;
   border-bottom: 1px solid #ddd;
@@ -2628,13 +2620,6 @@ p {
   align-content: center;
   align-items: center;
   max-width: 65%;
-}
-
-.pricing-header {
-  color: #888;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-top: 20px;
 }
 
 .pricing-features {
