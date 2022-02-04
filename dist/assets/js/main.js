@@ -44,13 +44,13 @@ function contactSubmit(){
 const validCampaigns = ["api", "streaming", "events"]
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
-  'streaming': 'Stream Data With your Partners in Minutes.',
+  'streaming': 'Stream Data With Partners in Minutes.',
   'events': 'Connect Event Driven Architectures in Minutes.'
 }
 
 const taglineValues = {
   'api' : ['Host data on a fully managed API in minutes.'],
-  'streaming': ['Stream data in real-time, with no infrastructure hosting.'],
+  'streaming': ['Stream data in real-time, without hosting any infrastructure.'],
   'events': ['Stream data with your partners, with no Stream hosting.']
 }
 
