@@ -5,6 +5,10 @@ terraform {
     workspaces {
       name = "landing-page"
     }
+
+  required_providers {
+    aws  = "~> 3.73.0"
+  }
   }
 }
 
