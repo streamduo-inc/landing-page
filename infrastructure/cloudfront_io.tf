@@ -19,6 +19,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     prefix          = "landing_page"
   }
 
+  restrictions {
+    geo_restriction {
+      restriction_type = "none"
+    }
+  }
+
   aliases = ["www.streamduo.io", "streamduo.io"]
 
   default_cache_behavior {
