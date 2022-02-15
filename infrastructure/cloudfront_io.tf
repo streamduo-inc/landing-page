@@ -1,5 +1,5 @@
 locals {
-  s3_origin_id = "streamduo-landing"
+  s3_origin_id    = "streamduo-landing"
   s3_origin_id_io = "streamduo-landing-io"
 }
 
