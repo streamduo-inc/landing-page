@@ -1,11 +1,12 @@
 locals {
   s3_origin_id = "streamduo-landing"
+  s3_origin_id_io = "streamduo-landing-io"
 }
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name = aws_s3_bucket.landing_bucket.bucket_regional_domain_name
-    origin_id   = local.s3_origin_id
+    domain_name = aws_s3_bucket.landing_bucket_io.bucket_regional_domain_name
+    origin_id   = local.s3_origin_id_io
 
   }
 
@@ -16,7 +17,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   logging_config {
     include_cookies = false
     bucket          = "aws-cloudtrail-logs-351621728824-96579f16.s3.amazonaws.com"
-    prefix          = "landing_page"
+    prefix          = "landing_page_io"
   }
 
   restrictions {
@@ -30,7 +31,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = local.s3_origin_id
+    target_origin_id = local.s3_origin_id_io
 
     forwarded_values {
       query_string = false
