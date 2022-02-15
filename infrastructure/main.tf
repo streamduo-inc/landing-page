@@ -49,7 +49,7 @@ variable "domain_name_io" {
 }
 
 resource "aws_s3_bucket" "landing_bucket_io" {
-  bucket = var.domain_name
+  bucket = var.domain_name_io
   acl    = "public-read"
   policy = data.aws_iam_policy_document.website_policy_io.json
   website {
