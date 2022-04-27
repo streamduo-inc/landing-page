@@ -41,17 +41,19 @@ function contactSubmit(){
   }
 }
 
-const validCampaigns = ["api", "streaming", "events"]
+const validCampaigns = ["api", "streaming", "mft"]
+
+
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
   'streaming': 'Stream Data With Partners in Minutes.',
-  'events': 'Connect Event Driven Architectures in Minutes.'
+  'mft': 'Data Transfer Platform, built for Data Engineers.'
 }
 
 const taglineValues = {
   'api' : ['Host data on a fully managed API in minutes.'],
   'streaming': ['Connect with real-time event streams, with no infrastructure hosting.'],
-  'events': ['Stream data with your partners, with no infrastructure hosting.']
+  'mft': ['A Data transfer platform, optimized for data engineers.']
 }
 
 function getTitle()  {
@@ -68,7 +70,7 @@ function getAd() {
   if (validCampaigns.includes(myParam)){
     return myParam;
   }
-  return "streaming"
+  return "mft"
 }
 
 (function () {

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>StreamDuo - Real Time Data Streaming</title>
-    <meta name="description" content="StreamDuo is a platform for B2B data streaming. Use event streams to integrate with your partners in real-time, using simple APIs" />
+    <meta name="description" content="StreamDuo is a platform for B2B data transfers, built for Data engineers. Designed for structured data transfers, enforce schemas and encryption, using simple APIs" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="shortcut icon"
@@ -52,7 +52,7 @@
 
   </head>
   <body>
-
+  <!-- ======== Thank you Modal ======== -->
   <div class="modal" tabindex="-1" id="thankyou-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -69,7 +69,9 @@
       </div>
     </div>
   </div>
+  <!-- ======== END Thank you Modal ======== -->
 
+  <!-- ======== Error Modal ======== -->
   <div class="modal" tabindex="-1" id="validation-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -86,6 +88,8 @@
       </div>
     </div>
   </div>
+  <!-- ======== END Error Modal ======== -->
+
 
     <!--[if lte IE 9]>
       <p class="browserupgrade">
@@ -187,7 +191,7 @@
           <div class="col-lg-6">
             <div class="hero-content">
               <h1 class="wow fadeInUp" data-wow-delay=".4s" id="titleText">
-                Real-time data streaming platform
+                Data Transfer Platform for Daffta Engineering
               </h1>
               <h3 class="text-white mb-25" data-wow-delay=".6s" id="taglineText">
                 StreamDuo is a platform for B2B data streaming.
@@ -218,25 +222,25 @@
           <div class="about-content">
             <div class="section-title mb-30">
               <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                Simple, secure event streams for external partners.
+                SFTP is the wrong tool for data transfer.
               </h2>
               <p class="wow fadeInUp" data-wow-delay=".4s">
                 Share data with your partners using event streams. Provision private, secure data streams for a real-time data integration with any external partner.
               </p>
             </div>
-              <h4>Simple.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Read & Write records using simple APIs.</p>
+              <h4>Simple.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Read & Write data using simple APIs. No extra ports or networking needed.</p>
             <br>
             <br>
-            <h4>Secure.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage access for each stream.</p>
+            <h4>Secure.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage access for each stream, with integrated key management for encryption. </p>
             <br>
             <br>
-              <h4>Fast.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Create a stream and start sending records in minutes.</p>
+              <h4>Error Free.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Reject bad data and incorrect files with the integrated schema registry.</p>
 
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 order-first order-lg-last">
           <div class="about-img-2" >
-            <img src="assets/img/about/hero-sketch-1.png" alt="data flow sketch" class="w-100" />
+            <img src="assets/img/about/mft-intro.png" alt="data flow sketch" class="w-100" />
           </div>
         </div>
       </div>
@@ -266,19 +270,19 @@
               <br>
             </div>
             <h4>1. Create a Stream</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">A Stream is a private channel for you to read and write records.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">A Stream is a private channel for you to read and write data with your partners.</p>
             <br>
             <br>
             <h4>2. Grant Access to your Partners</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">You control who can read and write, add a partner in the console to grant them access.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Add a partner in the console to grant them access, and allow them to provision API credentials.</p>
             <br>
             <br>
-            <h4>3. Write Data</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Write records in real-time, using simple APIs. Records are stored in a queue and their read status is tracked.</p>
+            <h4>3. Set the Schema and Encryption Key</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Upload a data schema, and a public encryption key.</p>
             <br>
             <br>
-            <h4>4. Read Data</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s" id="read-string">Read records using simple APIs. Polling for unread records will give you a streaming data connection with any partner.</p>
+            <h4>4. Write Data</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s" id="read-string">Upload files using simple APIs or SDKs, which handle data validation and encryption.</p>
             <br>
             <br>
             <a
