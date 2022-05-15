@@ -148,13 +148,10 @@
                 >
                   <ul id="nav" class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="page-scroll" href="#about">Streaming Data</a>
+                      <a class="page-scroll" href="#about">How it Works</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#schema">Schema Registry</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#contact">Contact</a>
@@ -225,16 +222,16 @@
                 A data transfer platform built for Data Engineering.
               </h2>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                File Transfer methods like SFTP or S3 integration are not ideal for the structured data transferred by data engineers. StreamDuo offers a data transfer platform that is..
+                File Transfer methods like SFTP or S3 integration are not ideal for the structured data transferred by data engineers. StreamDuo offers a data transfer platform that is built for...
               </p>
             </div>
-              <h4>Built for Automation</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision unique client credentials for each process, and read & write using simple APIs.</p>
+              <h4>Automation</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision unique client credentials for each process, and read & write using simple APIs. Ideal for IPaaS integrations.</p>
             <br>
             <br>
-            <h4>Secure Data</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage encryption keys for each transfer, for full end-to-end data encryption.</p>
+            <h4>Data Security</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage encryption keys for each transfer, for full end-to-end data encryption.</p>
             <br>
             <br>
-              <h4>Accurate Data</h4><p class="wow fadeInUp" data-wow-delay=".4s">Manage data schemas to reject bad data and incorrect files.</p>
+              <h4>Data Quality</h4><p class="wow fadeInUp" data-wow-delay=".4s">Manage data schemas to reject bad data and incorrect files.</p>
 
           </div>
         </div>
@@ -255,7 +252,7 @@
       <div class="row align-items-center">
         <div class="col-xl-6 col-lg-6">
           <div class="about-img">
-            <img src="assets/img/about/how-it-works-stream.png" alt="how it works walkthrough" class="w-100" id="howitworks-img"/>
+            <img src="assets/img/about/how-it-works-mft.png" alt="how it works walkthrough" class="w-100" id="howitworks-img"/>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6">
@@ -265,7 +262,7 @@
                 How it Works
               </h2>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                With StreamDuo you write data to a private stream using simple APIs. Once you grant access to your partners, they read the data using flexible APIs to fit any use case.
+                With StreamDuo you write data to a private stream using simple APIs. Once you grant access to your partners, they provision credentials, and read the data using flexible APIs and SDKs.
               </p>
               <br>
             </div>
@@ -274,15 +271,19 @@
             <br>
             <br>
             <h4>2. Grant Access to your Partners</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Add a partner in the console to grant them access, and allow them to provision API credentials.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Add a partner in the console to grant them access, allowing them to provision API credentials.</p>
             <br>
             <br>
             <h4>3. Set the Schema and Encryption Key</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Set the data schema, and public encryption keys you want to use for the data.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Set the data schema, and public encryption keys that will be used for the data.</p>
             <br>
             <br>
             <h4>4. Write Data</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s" id="read-string">Upload data using simple APIs or SDKs, which handle data validation and encryption.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Upload data using simple APIs or SDKs, which handle data validation and encryption.</p>
+            <br>
+            <br>
+            <h4>5. Read Data</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s" >Download data using simple APIs or SDKs, which handle decryption and data validation.</p>
             <br>
             <br>
             <a
@@ -311,7 +312,7 @@
                 Each stream has a private schema registry, allowing you to define expectations for your data, and share schemas with external partners.
               </p>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                With the schema registry you can stop bad data before it's even ingested. Your partners can pull the latest schema and run data validation on every record before it's sent.
+                With the schema registry you can stop bad data before it's even ingested. Prior to data being uploaded, the latest schema is pulled and data validation is run.
               </p>
               <br>
               <br>
@@ -335,365 +336,366 @@
   </section>
   <!-- ======== Schema section end ======== -->
 
-   <!-- ======== Use-case section start ======== -->
-<!--    <section id="features" class="feature-section pt-120">-->
-<!--      <div class="container">-->
-<!--        <h1 class="wow fadeInUp" data-wow-delay=".4s" id="usecase-header">-->
-<!--          The easiest way to share real-time data with external partners.-->
-<!--        </h1>-->
-<!--        <div class="row justify-content-center">-->
-<!--          <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--            <div class="single-feature"><a href="https://blog.streamduo.com/marketing-usecase/">-->
-<!--              <div class="icon">-->
-<!--                <i class="lni lni-bolt-alt"></i>-->
-<!--              </div>-->
-<!--              <div class="content">-->
-<!--                <h3>Sharing Customer Updates</h3>-->
-<!--                <p>-->
-<!--                  See how you can share customer data with your marketing agency, and fulfill in real-time.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--            <div class="single-feature"><a href="https://blog.streamduo.com/streamduo-use-case-collections-agency/">-->
-<!--              <div class="icon">-->
-<!--                <i class="lni lni-layout"></i>-->
-<!--              </div>-->
-<!--              <div class="content">-->
-<!--                <h3>Agency Outsourcing</h3>-->
-<!--                <p>-->
-<!--                  See how an outsourcing firm can share workflow progress with their clients.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--            <div class="single-feature"><a href="https://blog.streamduo.com/encryption/">-->
-<!--              <div class="icon">-->
-<!--                <i class="lni lni-lock-alt"></i>-->
-<!--              </div>-->
-<!--              <div class="content">-->
-<!--                <h3>Sharing with End-to-end Encryption</h3>-->
-<!--                <p>-->
-<!--                  See how you can integrate end-to-end encryption for the transfer of sensitive data.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-    <!-- ======== Use-case section end ======== -->
+  <!-- ======== Key section start ======== -->
+  <section id="key" class="about-section pt-150">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-img">
+            <img src="assets/img/about/keys.png" alt="how it works walkthrough" class="w-100" id="keys-img"/>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-content">
+            <div class="section-title mb-30">
+              <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                End to End Encryption
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                Public keys are associated with each stream, allowing users to retrieve public keys required for encryption prior to uploading data.
+              </p>
+              <br>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                Upload your own keys, or generate new keys for each stream.
+              </p>
+              <br>
+            </div>
+            <a
+                    href="https://docs.streamduo.com/how/"
+                    class="main-btn btn-hover border-btn wow fadeInUp"
+                    data-wow-delay=".6s"
+            >Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======== Key section end ======== -->
 
   <!-- ======== pricing-section start ======== -->
-<!--  <section id="pricing" class="pricing-section pt-120 pb-120">-->
-<!--    <div class="container">-->
-<!--      <div class="row justify-content-center">-->
-<!--        <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">-->
-<!--          <div class="section-title text-center mb-35">-->
-<!--            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">-->
-<!--              Plan Options-->
-<!--            </h1>-->
-<!--            <p class="wow fadeInUp" data-wow-delay=".4s">-->
-<!--              Start experimenting for free, or choose a plan that fits your needs.-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
+  <section id="pricing" class="pricing-section pt-120 pb-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
+          <div class="section-title text-center mb-35">
+            <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+              Plan Options
+            </h1>
+            <p class="wow fadeInUp" data-wow-delay=".4s">
+              Start experimenting for free, or choose a plan that fits your needs.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<!--      <div class="pricing-nav-wrapper mb-60">-->
-<!--        <ul class="nav nav-pills" id="pills-tab" role="tablist">-->
-<!--          <li role="presentation">-->
-<!--            <a-->
-<!--                    class="active"-->
-<!--                    id="pills-month-tab"-->
-<!--                    data-bs-toggle="pill"-->
-<!--                    href="#pills-month"-->
-<!--                    role="tab"-->
-<!--                    aria-controls="pills-month"-->
-<!--                    aria-selected="true"-->
-<!--            >Monthly</a-->
-<!--            >-->
-<!--          </li>-->
-<!--          <li role="presentation">-->
-<!--            <a-->
-<!--                    id="pills-year-tab"-->
-<!--                    data-bs-toggle="pill"-->
-<!--                    href="#pills-year"-->
-<!--                    role="tab"-->
-<!--                    aria-controls="pills-year"-->
-<!--                    aria-selected="false"-->
-<!--            >Yearly</a-->
-<!--            >-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
+      <div class="pricing-nav-wrapper mb-60">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li role="presentation">
+            <a
+                    class="active"
+                    id="pills-month-tab"
+                    data-bs-toggle="pill"
+                    href="#pills-month"
+                    role="tab"
+                    aria-controls="pills-month"
+                    aria-selected="true"
+            >Monthly</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+                    id="pills-year-tab"
+                    data-bs-toggle="pill"
+                    href="#pills-year"
+                    role="tab"
+                    aria-controls="pills-year"
+                    aria-selected="false"
+            >Yearly</a
+            >
+          </li>
+        </ul>
+      </div>
 
-<!--      <div class="tab-content" id="pills-tabContent">-->
-<!--        <div-->
-<!--                class="tab-pane fade show active"-->
-<!--                id="pills-month"-->
-<!--                role="tabpanel"-->
-<!--                aria-labelledby="pills-month-tab"-->
-<!--        >-->
-<!--          <div class="row justify-content-center">-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
+      <div class="tab-content" id="pills-tabContent">
+        <div
+                class="tab-pane fade show active"
+                id="pills-month"
+                role="tabpanel"
+                aria-labelledby="pills-month-tab"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
 
-<!--                  <p class="price">Free</p>-->
-<!--                  <h3 class="package-name">Experiment</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 1 User-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 2 Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 2 Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 100,000 Records/Month-->
-<!--                    </li>-->
-<!--                    <li><i class="lni lni-close"></i> 24/7 Support</li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a-->
-<!--                          href="javascript:signup()"-->
-<!--                          class="main-btn btn-hover border-btn"-->
-<!--                  >Sign Up</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
-<!--                  <p class="price">$99</p>-->
-<!--                  <h3 class="package-name">Start-Up</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Users-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 1,000,000 Records/Month-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 24/7 Support-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a href="javascript:signup()" class="main-btn btn-hover"-->
-<!--                  >Sign Up</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
-<!--                  <p class="price">Contact Us</p>-->
-<!--                  <h3 class="package-name">Enterprise</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Users-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Records/Month-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 24/7 Support-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a-->
-<!--                          href="#contact"-->
-<!--                          class="main-btn btn-hover border-btn"-->
-<!--                  >Contact Us</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div-->
-<!--                class="tab-pane fade"-->
-<!--                id="pills-year"-->
-<!--                role="tabpanel"-->
-<!--                aria-labelledby="pills-year-tab"-->
-<!--        >-->
-<!--          <div class="row justify-content-center">-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
-<!--                  <p class="price">Free</p>-->
-<!--                  <h3 class="package-name">Experiment</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 1 User-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 2 Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 2 Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 100,000 Records/Month-->
-<!--                    </li>-->
-<!--                    <li><i class="lni lni-close"></i> 24/7 Support</li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a-->
-<!--                          href="javascript:signup()"-->
-<!--                          class="main-btn btn-hover border-btn"-->
-<!--                  >Sign Up</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
-<!--                  <p class="price">$999</p>-->
-<!--                  <h3 class="package-name">Start-Up</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Users-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 5 Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 1,000,000 Records/Month-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 24/7 Support-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a href="javascript:signup(0)" class="main-btn btn-hover"-->
-<!--                  >Sign Up</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-8 col-sm-10">-->
-<!--              <div class="single-pricing">-->
-<!--                <div class="pricing-header">-->
-<!--                  <p class="price">Contact Us</p>-->
-<!--                  <h3 class="package-name">Enterprise</h3>-->
-<!--                </div>-->
-<!--                <div class="content">-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Users-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Streams-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Schemas-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> Unlimited Records/Month-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <i class="lni lni-checkmark active"></i> 24/7 Support-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-<!--                <div class="pricing-btn">-->
-<!--                  <a-->
-<!--                          href="#contact"-->
-<!--                          class="main-btn btn-hover border-btn"-->
-<!--                  >Contact Us</a-->
-<!--                  >-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+                  <p class="price">Free</p>
+                  <h3 class="package-name">Experiment</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 User
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 2 Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 GB/Month
+                    </li>
+                    <li><i class="lni lni-close"></i> 24/7 Support</li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a
+                          href="javascript:signup()"
+                          class="main-btn btn-hover border-btn"
+                  >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
+                  <p class="price">$99</p>
+                  <h3 class="package-name">Start-Up</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 5 Users
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 5 Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 100 GB/Month
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 24/7 Support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a href="javascript:signup()" class="main-btn btn-hover"
+                  >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
+                  <p class="price">Contact Us</p>
+                  <h3 class="package-name">Enterprise</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Users
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited GB/Month
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 24/7 Support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a
+                          href="#contact"
+                          class="main-btn btn-hover border-btn"
+                  >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+                class="tab-pane fade"
+                id="pills-year"
+                role="tabpanel"
+                aria-labelledby="pills-year-tab"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
+                  <p class="price">Free</p>
+                  <h3 class="package-name">Experiment</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 User
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 2 Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 GB/Month
+                    </li>
+                    <li><i class="lni lni-close"></i> 24/7 Support</li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a
+                          href="javascript:signup()"
+                          class="main-btn btn-hover border-btn"
+                  >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
+                  <p class="price">$999</p>
+                  <h3 class="package-name">Start-Up</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 5 Users
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 5 Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 100 GB/Month
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 24/7 Support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a href="javascript:signup(0)" class="main-btn btn-hover"
+                  >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+              <div class="single-pricing">
+                <div class="pricing-header">
+                  <p class="price">Contact Us</p>
+                  <h3 class="package-name">Enterprise</h3>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Users
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Streams
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited GB/Month
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 24/7 Support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-btn">
+                  <a
+                          href="#contact"
+                          class="main-btn btn-hover border-btn"
+                  >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ======== pricing-section end ======== -->
 
   <!-- ======== subscribe-section start ======== -->
-<!--  <section id="contact" class="subscribe-section pt-120">-->
-<!--    <div class="container">-->
-<!--      <div class="subscribe-wrapper img-bg">-->
-<!--        <div class="row align-items-center">-->
-<!--          <div class="col-xl-6 col-lg-7">-->
-<!--            <div class="section-title mb-15">-->
-<!--              <h2 class="text-white mb-25">Connect With Us</h2>-->
-<!--              <p class="text-white pr-5">-->
-<!--                Learn what StreamDuo can do for your partnerships.-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-xl-6" id="ub-convertable-trigger">-->
-<!--            <form class="subscribe-form" id="sub-form">-->
-<!--              <input-->
-<!--                      type="name"-->
-<!--                      name="subs-name"-->
-<!--                      id="subs-name"-->
-<!--                      placeholder="Name"-->
-<!--                      required="True"-->
-<!--              />-->
-<!--              <input-->
-<!--                      type="email"-->
-<!--                      name="subs-email"-->
-<!--                      id="subs-email"-->
-<!--                      placeholder="Email"-->
-<!--                      required="True"-->
-<!--              />-->
-<!--            </form>-->
-<!--          </div>-->
-<!--          <button class="main-btn btn-hover border-btn-light btn-block" onclick="contactSubmit()">-->
-<!--            Connect With Us-->
-<!--          </button>-->
+  <section id="contact" class="subscribe-section pt-120">
+    <div class="container">
+      <div class="subscribe-wrapper img-bg">
+        <div class="row align-items-center">
+          <div class="col-xl-6 col-lg-7">
+            <div class="section-title mb-15">
+              <h2 class="text-white mb-25">Connect With Us</h2>
+              <p class="text-white pr-5">
+                Learn what StreamDuo can do for your partnerships.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6" id="ub-convertable-trigger">
+            <form class="subscribe-form" id="sub-form">
+              <input
+                      type="name"
+                      name="subs-name"
+                      id="subs-name"
+                      placeholder="Name"
+                      required="True"
+              />
+              <input
+                      type="email"
+                      name="subs-email"
+                      id="subs-email"
+                      placeholder="Email"
+                      required="True"
+              />
+            </form>
+          </div>
+          <button class="main-btn btn-hover border-btn-light btn-block" onclick="contactSubmit()">
+            Connect With Us
+          </button>
 
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ======== subscribe-section end ======== -->
+
 
   <!-- ======== footer start ======== -->
   <footer class="footer">
