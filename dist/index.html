@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>StreamDuo - Real Time Data Streaming</title>
-    <meta name="description" content="StreamDuo is a platform for B2B data streaming. Use event streams to integrate with your partners in real-time, using simple APIs" />
+    <meta name="description" content="StreamDuo is a platform for B2B data transfers, built for Data engineers. Designed for structured data transfers, enforce schemas and encryption, using simple APIs" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="shortcut icon"
@@ -52,7 +52,7 @@
 
   </head>
   <body>
-
+  <!-- ======== Thank you Modal ======== -->
   <div class="modal" tabindex="-1" id="thankyou-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -69,7 +69,9 @@
       </div>
     </div>
   </div>
+  <!-- ======== END Thank you Modal ======== -->
 
+  <!-- ======== Error Modal ======== -->
   <div class="modal" tabindex="-1" id="validation-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -86,6 +88,8 @@
       </div>
     </div>
   </div>
+  <!-- ======== END Error Modal ======== -->
+
 
     <!--[if lte IE 9]>
       <p class="browserupgrade">
@@ -144,13 +148,10 @@
                 >
                   <ul id="nav" class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="page-scroll" href="#about">Streaming Data</a>
+                      <a class="page-scroll" href="#about">How it Works</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#schema">Schema Registry</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
                       <a class="page-scroll" href="#contact">Contact</a>
@@ -187,7 +188,7 @@
           <div class="col-lg-6">
             <div class="hero-content">
               <h1 class="wow fadeInUp" data-wow-delay=".4s" id="titleText">
-                Real-time data streaming platform
+                Data Transfer Platform for Data Engineering
               </h1>
               <h3 class="text-white mb-25" data-wow-delay=".6s" id="taglineText">
                 StreamDuo is a platform for B2B data streaming.
@@ -218,25 +219,25 @@
           <div class="about-content">
             <div class="section-title mb-30">
               <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                Simple, secure event streams for external partners.
+                A data transfer platform built for Data Engineering.
               </h2>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                Share data with your partners using event streams. Provision private, secure data streams for a real-time data integration with any external partner.
+                File Transfer methods like SFTP or S3 integration are not ideal for the structured data transferred by data engineers. StreamDuo offers a data transfer platform that is built for...
               </p>
             </div>
-              <h4>Simple.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Read & Write records using simple APIs.</p>
+              <h4>Automation</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision unique client credentials for each process, and read & write using simple APIs. Ideal for IPaaS integrations.</p>
             <br>
             <br>
-            <h4>Secure.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage access for each stream.</p>
+            <h4>Data Security</h4><p class="wow fadeInUp" data-wow-delay=".4s">Provision and manage encryption keys for each transfer, for full end-to-end data encryption.</p>
             <br>
             <br>
-              <h4>Fast.</h4><p class="wow fadeInUp" data-wow-delay=".4s">Create a stream and start sending records in minutes.</p>
+              <h4>Data Quality</h4><p class="wow fadeInUp" data-wow-delay=".4s">Manage data schemas to reject bad data and incorrect files.</p>
 
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 order-first order-lg-last">
           <div class="about-img-2" >
-            <img src="assets/img/about/hero-sketch-1.png" alt="data flow sketch" class="w-100" />
+            <img src="assets/img/about/mft-intro.png" alt="data flow sketch" class="w-100" />
           </div>
         </div>
       </div>
@@ -251,7 +252,7 @@
       <div class="row align-items-center">
         <div class="col-xl-6 col-lg-6">
           <div class="about-img">
-            <img src="assets/img/about/how-it-works-stream.png" alt="how it works walkthrough" class="w-100" id="howitworks-img"/>
+            <img src="assets/img/about/how-it-works-mft.png" alt="how it works walkthrough" class="w-100" id="howitworks-img"/>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6">
@@ -261,24 +262,28 @@
                 How it Works
               </h2>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                With StreamDuo you write records to a private stream using simple APIs. Once you grant access to your partners, they read records using flexible APIs to fit any use case.
+                With StreamDuo you write data to a private stream using simple APIs. Once you grant access to your partners, they provision credentials, and read the data using flexible APIs and SDKs.
               </p>
               <br>
             </div>
             <h4>1. Create a Stream</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">A Stream is a private channel for you to read and write records.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">A Stream is a private channel for you to read and write data with your partners.</p>
             <br>
             <br>
             <h4>2. Grant Access to your Partners</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">You control who can read and write, add a partner in the console to grant them access.</p>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Add a partner in the console to grant them access, allowing them to provision API credentials.</p>
             <br>
             <br>
-            <h4>3. Write Data</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s">Write records in real-time, using simple APIs. Records are stored in a queue and their read status is tracked.</p>
+            <h4>3. Set the Schema and Encryption Key</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Set the data schema, and public encryption keys that will be used for the data.</p>
             <br>
             <br>
-            <h4>4. Read Data</h4>
-            <p class="wow fadeInUp" data-wow-delay=".4s" id="read-string">Read records using simple APIs. Polling for unread records will give you a streaming data connection with any partner.</p>
+            <h4>4. Write Data</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Upload data using simple APIs or SDKs, which handle data validation and encryption.</p>
+            <br>
+            <br>
+            <h4>5. Read Data</h4>
+            <p class="wow fadeInUp" data-wow-delay=".4s" >Download data using simple APIs or SDKs, which handle decryption and data validation.</p>
             <br>
             <br>
             <a
@@ -307,7 +312,7 @@
                 Each stream has a private schema registry, allowing you to define expectations for your data, and share schemas with external partners.
               </p>
               <p class="wow fadeInUp" data-wow-delay=".4s">
-                With the schema registry you can stop bad data before it's even ingested. Your partners can pull the latest schema and run data validation on every record before it's sent.
+                With the schema registry you can stop bad data before it's even ingested. Prior to data being uploaded, the latest schema is pulled and data validation is run.
               </p>
               <br>
               <br>
@@ -331,59 +336,41 @@
   </section>
   <!-- ======== Schema section end ======== -->
 
-   <!-- ======== Use-case section start ======== -->
-    <section id="features" class="feature-section pt-120">
-      <div class="container">
-        <h1 class="wow fadeInUp" data-wow-delay=".4s" id="usecase-header">
-          The easiest way to share real-time data with external partners.
-        </h1>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-feature"><a href="https://blog.streamduo.com/marketing-usecase/">
-              <div class="icon">
-                <i class="lni lni-bolt-alt"></i>
-              </div>
-              <div class="content">
-                <h3>Sharing Customer Updates</h3>
-                <p>
-                  See how you can share customer data with your marketing agency, and fulfill in real-time.
-                </p>
-              </div>
-            </a>
-            </div>
+  <!-- ======== Key section start ======== -->
+  <section id="key" class="about-section pt-150">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-img">
+            <img src="assets/img/about/keys.png" alt="how it works walkthrough" class="w-100" id="keys-img"/>
           </div>
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-feature"><a href="https://blog.streamduo.com/streamduo-use-case-collections-agency/">
-              <div class="icon">
-                <i class="lni lni-layout"></i>
-              </div>
-              <div class="content">
-                <h3>Agency Outsourcing</h3>
-                <p>
-                  See how an outsourcing firm can share workflow progress with their clients.
-                </p>
-              </div>
-            </a>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-content">
+            <div class="section-title mb-30">
+              <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                End to End Encryption
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                Public keys are associated with each stream, allowing users to retrieve public keys required for encryption prior to uploading data.
+              </p>
+              <br>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                Upload your own keys, or generate new keys for each stream.
+              </p>
+              <br>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-feature"><a href="https://blog.streamduo.com/encryption/">
-              <div class="icon">
-                <i class="lni lni-lock-alt"></i>
-              </div>
-              <div class="content">
-                <h3>Sharing with End-to-end Encryption</h3>
-                <p>
-                  See how you can integrate end-to-end encryption for the transfer of sensitive data.
-                </p>
-              </div>
-            </a>
-            </div>
+            <a
+                    href="https://docs.streamduo.com/how/"
+                    class="main-btn btn-hover border-btn wow fadeInUp"
+                    data-wow-delay=".6s"
+            >Learn More</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ======== Use-case section end ======== -->
+    </div>
+  </section>
+  <!-- ======== Key section end ======== -->
 
   <!-- ======== pricing-section start ======== -->
   <section id="pricing" class="pricing-section pt-120 pb-120">
@@ -453,10 +440,13 @@
                       <i class="lni lni-checkmark active"></i> 2 Streams
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 2 Schemas
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 100,000 Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 GB/Month
                     </li>
                     <li><i class="lni lni-close"></i> 24/7 Support</li>
                   </ul>
@@ -485,10 +475,13 @@
                       <i class="lni lni-checkmark active"></i> 5 Streams
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 5 Schemas
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 1,000,000 Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 100 GB/Month
                     </li>
                     <li>
                       <i class="lni lni-checkmark active"></i> 24/7 Support
@@ -520,7 +513,10 @@
                       <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> Unlimited Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited GB/Month
                     </li>
                     <li>
                       <i class="lni lni-checkmark active"></i> 24/7 Support
@@ -560,10 +556,13 @@
                       <i class="lni lni-checkmark active"></i> 2 Streams
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 2 Schemas
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 100,000 Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 1 GB/Month
                     </li>
                     <li><i class="lni lni-close"></i> 24/7 Support</li>
                   </ul>
@@ -592,10 +591,13 @@
                       <i class="lni lni-checkmark active"></i> 5 Streams
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 5 Schemas
+                      <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> 1,000,000 Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> 100 GB/Month
                     </li>
                     <li>
                       <i class="lni lni-checkmark active"></i> 24/7 Support
@@ -627,7 +629,10 @@
                       <i class="lni lni-checkmark active"></i> Unlimited Schemas
                     </li>
                     <li>
-                      <i class="lni lni-checkmark active"></i> Unlimited Records/Month
+                      <i class="lni lni-checkmark active"></i> Unlimited Keys
+                    </li>
+                    <li>
+                      <i class="lni lni-checkmark active"></i> Unlimited GB/Month
                     </li>
                     <li>
                       <i class="lni lni-checkmark active"></i> 24/7 Support
@@ -690,6 +695,7 @@
     </div>
   </section>
   <!-- ======== subscribe-section end ======== -->
+
 
   <!-- ======== footer start ======== -->
   <footer class="footer">
