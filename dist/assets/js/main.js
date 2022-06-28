@@ -47,13 +47,13 @@ const validCampaigns = ["api", "streaming", "mft"]
 const titleValues = {
   'api' : "Host Any Data on an API in Minutes.",
   'streaming': 'Stream Data With Partners in Minutes.',
-  'mft': 'A Data Transfer Platform Built for Data Engineers'
+  'mft': 'Real-Time Data Transfer Platform'
 }
 
 const taglineValues = {
   'api' : ['Host data on a fully managed API in minutes.'],
   'streaming': ['Connect with real-time event streams, with no infrastructure hosting.'],
-  'mft': ['Transfer data with integrated data validation and end-to-end encryption']
+  'mft': ['Transfer data with data validation and end-to-end encryption']
 }
 
 function getTitle()  {
